@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muzeum Vědy a Technologie – Expozice a Výstavy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav>
+    <div class="container">
+      <span class="nav-logo">⚛ Muzeum VaT</span>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#expo">Expozice</a></li>
+        <li><a href="#premium">Výstavy</a></li>
+        <li><a href="#info">Vstupné</a></li>
+        <li><a href="#reviews">Recenze</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+        <li><a href="#reservation">Rezervace</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Otevřít menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="hero">
+    <h1>Muzeum Vědy a Technologie</h1>
+    <p>Objevte svět vědy, inovací a techniky – od prvních vynálezů po hranice budoucnosti v srdci Prahy.</p>
+    <a href="#reservation" class="btn btn-primary">Rezervovat vstupenku</a>
+    <a href="#expo" class="btn btn-outline">Prohlédnout expozice</a>
+  </section>
+
+  <!-- ===================== COUNTDOWN ===================== -->
+  <div id="countdown">
+    <h2>Nová výstava: Kvantový svět</h2>
+    <p id="countdown-text">Zahájení 20. října 2026 – zbývá:</p>
+    <div class="countdown-grid">
+      <div class="countdown-box">
+        <div class="num" id="cd-days">00</div>
+        <div class="label">Dní</div>
+      </div>
+      <div class="countdown-box">
+        <div class="num" id="cd-hours">00</div>
+        <div class="label">Hodin</div>
+      </div>
+      <div class="countdown-box">
+        <div class="num" id="cd-minutes">00</div>
+        <div class="label">Minut</div>
+      </div>
+      <div class="countdown-box">
+        <div class="num" id="cd-seconds">00</div>
+        <div class="label">Sekund</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== PREMIUM CAROUSEL ===================== -->
+  <section id="premium">
+    <div class="container">
+      <h2 class="section-title">Prémiové výstavy</h2>
+      <p class="section-subtitle">Aktuálně probíhající top expozice muzea</p>
+
+      <div class="carousel-wrapper">
+        <button class="carousel-btn prev" aria-label="Předchozí">&#8249;</button>
+        <div class="carousel-track">
+
+          <div class="carousel-slide">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200" alt="Průkopníci počítačů">
+            <div class="carousel-caption">
+              <h3>Průkopníci počítačů</h3>
+              <p>Od děrných štítků po umělou inteligenci – velká retrospektiva dějin výpočetní techniky.</p>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <img src="https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?w=1200" alt="Mars a dál">
+            <div class="carousel-caption">
+              <h3>Mars a dál</h3>
+              <p>Interaktivní výstava o budoucnosti meziplanetárního cestování a kolonizaci vesmíru.</p>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200" alt="Roboti mezi námi">
+            <div class="carousel-caption">
+              <h3>Roboti mezi námi</h3>
+              <p>Živé demonstrace robotických systémů a pohled na automatizaci průmyslu i každodenního života.</p>
+            </div>
+          </div>
+
+        </div>
+        <button class="carousel-btn next" aria-label="Další">&#8250;</button>
+      </div>
+
+      <div class="carousel-dots">
+        <span class="active"></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPOZICE (z CSV) ===================== -->
+  <section id="expo">
+    <div class="container">
+      <h2 class="section-title">Naše expozice</h2>
+      <p class="section-subtitle">Stálé expozice muzea otevřené celoročně</p>
+      <div class="expo-grid" id="expo-grid">
+        <p>Načítám expozice…</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== INFO / VSTUPNÉ ===================== -->
+  <section id="info">
+    <div class="container">
+      <h2 class="section-title">Informace & Vstupné</h2>
+      <p class="section-subtitle">Vše, co potřebujete vědět před návštěvou</p>
+
+      <div class="info-grid">
+
+        <div class="info-box">
+          <h3>Otevírací doba</h3>
+          <ul>
+            <li>Pondělí: zavřeno</li>
+            <li>Út – Pá: 9:00 – 18:00</li>
+            <li>Sobota: 9:00 – 20:00</li>
+            <li>Neděle: 10:00 – 17:00</li>
+            <li>Státní svátky: dle programu</li>
+          </ul>
+        </div>
+
+        <div class="info-box">
+          <h3>Vstupné</h3>
+          <table>
+            <tr><td>Dospělí</td><td>260 Kč</td></tr>
+            <tr><td>Studenti / Senioři</td><td>160 Kč</td></tr>
+            <tr><td>Děti (do 6 let)</td><td>ZDARMA</td></tr>
+            <tr><td>Rodinné (2+2)</td><td>640 Kč</td></tr>
+            <tr><td>Prémiová výstava</td><td>+100 Kč</td></tr>
+          </table>
+        </div>
+
+        <div class="info-box">
+          <h3>Praktické info</h3>
+          <ul>
+            <li>Bezbariérový přístup</li>
+            <li>Šatna a úschovna zavazadel</li>
+            <li>Muzejní obchod a kavárna</li>
+            <li>Skupinové prohlídky s průvodcem</li>
+            <li>Audioguide v češtině a angličtině</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RECENZE ===================== -->
+  <section id="reviews">
+    <div class="container">
+      <h2 class="section-title">Recenze návštěvníků</h2>
+      <p class="section-subtitle">Co říkají naši návštěvníci</p>
+
+      <div class="reviews-grid">
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">„Výstava o robotice mě naprosto ohromila. Synové se od exponátů nemohli odtrhnout!"</p>
+          <div class="review-author">— Lucie M., Praha</div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">„Skvěle zpracovaná expozice o historii počítačů. Konečně muzeum, kde se vzdělám i pobavím."</p>
+          <div class="review-author">— Ondřej V., Brno</div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★☆</div>
+          <p class="review-text">„Sekce o vesmíru a Marsu je fantastická. Interaktivní simulátory jsou zážitek pro celou rodinu."</p>
+          <div class="review-author">— Petra H., Liberec</div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">„Kvantová fyzika vysvětlená tak, že jí rozumí i laici. Nejlepší muzeum, které jsem navštívil."</p>
+          <div class="review-author">— Radek B., Olomouc</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section id="faq">
+    <div class="container">
+      <h2 class="section-title">Často kladené dotazy</h2>
+      <p class="section-subtitle">Odpovědi na nejčastější otázky</p>
+
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question">Jak si mohu rezervovat vstupenky?</button>
+          <div class="faq-answer">Vstupenky lze rezervovat online prostřednictvím formuláře na této stránce, telefonicky nebo osobně na pokladně muzea.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Je muzeum přístupné pro vozíčkáře?</button>
+          <div class="faq-answer">Ano, celé muzeum je plně bezbariérové. K dispozici jsou výtahy, rampy a speciálně upravené toalety.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Mohu si exponáty vyzkoušet?</button>
+          <div class="faq-answer">Většina expozic je interaktivní – návštěvníci mohou ovládat simulátory, experimentovat s exponáty a zapojit se do vědeckých pokusů.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Nabízíte skupinové slevy pro školy?</button>
+          <div class="faq-answer">Ano, pro školní skupiny nabízíme speciální vstupné a doprovodný vzdělávací program. Rezervace je nutná alespoň 5 dní předem.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Kde se muzeum nachází a jak se tam dostat?</button>
+          <div class="faq-answer">Muzeum se nachází v centru Prahy na Národní třídě 10. Nejbližší stanice metra je Národní třída (linka B). Dostupné také tramvajovými linkami 6, 9 a 18.</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== KONTAKT & MAPA ===================== -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Kontakt & Lokace</h2>
+      <p class="section-subtitle">Najdete nás v srdci Prahy</p>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Kontaktní údaje</h3>
+          <p><strong>Adresa:</strong><br>Národní třída 10<br>110 00 Praha 1</p>
+          <p><strong>Telefon:</strong><br><a href="tel:+420233444555">+420 233 444 555</a></p>
+          <p><strong>E-mail:</strong><br><a href="mailto:info@muzeum-vat.cz">info@muzeum-vat.cz</a></p>
+          <p><strong>IČO:</strong> 87654321</p>
+          <p style="margin-top:16px;"><strong>Sociální sítě:</strong><br>
+            <a href="#">Facebook</a> &nbsp;|&nbsp;
+            <a href="#">Instagram</a> &nbsp;|&nbsp;
+            <a href="#">YouTube</a>
+          </p>
+        </div>
+
+        <div class="map-placeholder">
+          <!-- OpenStreetMap embed – Národní třída, Praha -->
+          <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=14.412%2C50.079%2C14.426%2C50.084&layer=mapnik&marker=50.0815%2C14.4185"
+            title="Mapa – Muzeum Vědy a Technologie"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== REZERVACE ===================== -->
+  <section id="reservation">
+    <div class="container">
+      <h2 class="section-title">Rezervace vstupenek</h2>
+      <p class="section-subtitle">Objednejte si vstupenky online – jednoduše a rychle</p>
+
+      <div class="form-wrapper">
+        <form id="reservationForm" novalidate>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="visit-date">Datum návštěvy *</label>
+              <input type="date" id="visit-date" name="visit-date" min="2025-01-01" required>
+            </div>
+            <div class="form-group">
+              <label for="visit-time">Čas vstupu *</label>
+              <select id="visit-time" name="visit-time" required>
+                <option value="">– Vyberte čas –</option>
+                <option>09:00</option>
+                <option>10:00</option>
+                <option>11:00</option>
+                <option>12:00</option>
+                <option>13:00</option>
+                <option>14:00</option>
+                <option>15:00</option>
+                <option>16:00</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="people">Počet osob *</label>
+              <input type="number" id="people" name="people" min="1" max="50" placeholder="1" required>
+            </div>
+            <div class="form-group">
+              <label for="ticket-type">Typ vstupenky *</label>
+              <select id="ticket-type" name="ticket-type" required>
+                <option value="">– Vyberte typ –</option>
+                <option value="adult">Dospělí (260 Kč)</option>
+                <option value="student">Student / Senior (160 Kč)</option>
+                <option value="child">Dítě do 6 let (zdarma)</option>
+                <option value="family">Rodinné (640 Kč)</option>
+                <option value="premium">Prémiová výstava (+100 Kč)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-name">Jméno a příjmení *</label>
+              <input type="text" id="contact-name" name="contact-name" placeholder="Jan Novák" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-email">E-mail *</label>
+              <input type="email" id="contact-email" name="contact-email" placeholder="jan@email.cz" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-phone">Telefon</label>
+            <input type="tel" id="contact-phone" name="contact-phone" placeholder="+420 123 456 789">
+          </div>
+
+          <div class="form-group">
+            <label for="note">Poznámka</label>
+            <textarea id="note" name="note" rows="3" placeholder="Zvláštní požadavky, přístupnost, průvodce, školní skupina…"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%;font-size:1.05rem;">
+            Odeslat rezervaci
+          </button>
+
+          <div class="form-success" id="form-success">
+            ✓ Rezervace byla úspěšně odeslána! Potvrzení vám přijde na e-mail.
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="footer-logo">⚛ Muzeum Vědy a Technologie</div>
+    <p>Národní třída 10, 110 00 Praha 1</p>
+    <p style="margin-top:8px;">© 2026 Muzeum VaT. Všechna práva vyhrazena.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
